@@ -97,8 +97,6 @@ void *thread_merge_sort(void* arg)
     int middle = left + (right - left) / 2;
     if (left < right) {
         merge_sort(arr, left, right);
-        merge_sort(arr, left + 1, right);
-        merge(arr, left, middle, right);
     }
     return NULL;
 }
